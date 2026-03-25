@@ -23,4 +23,4 @@ RUN uv sync --frozen
 COPY . .
 
 # Run the MCP server
-CMD ["uv", "run", "src/mcp_server_box.py", "--transport", "http"]
+CMD ["uv", "run", "src/mcp_server_box.py", "--transport", "http", "--host", "0.0.0.0", "--port", "8005"]
